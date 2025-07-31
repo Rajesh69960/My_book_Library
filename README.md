@@ -1,12 +1,50 @@
-# React + Vite
+# Online Library React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple online library web application built with React, React Router, and Tailwind CSS. It features a homepage with a welcome message, category links, and popular books. Users can browse books by category, search for books, view detailed book information, and navigate seamlessly with a back button.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Homepage:**
+  - Welcome message
+  - Book categories with links
+  - Popular books list
+- **Browsing:**
+  - View all books or filter by category
+  - Search functionality for books
+  - Book detail pages
+- **Navigation:**
+  - Dynamic routing with React Router
+  - Back button to navigate to previous page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+## Technologies Used
+
+- React.js
+- React Router v6
+- Tailwind CSS
+- React Icons
+- React-Redux
+- React ToolKit
+
+---
+### Running Application
+- npm install
+- npm run dev
+
+---
+### Prerequisites
+
+- Node.js (version 14 or above)
+- npm or yarn package manager
+
+  ---
+
+### Repository Link
+
+https://github.com/Rajesh69960/My_book_Library
+
+---
