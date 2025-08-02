@@ -4,15 +4,14 @@ import { addItem } from "../utils/cartSlice"
 import { useNavigate } from "react-router-dom"
 import BackButton from "./BackButton"
 
-const categories = [
-  "Fiction",
-  "Classic",
-  "Science Fiction",
-  "Fantasy",
-  "Romance",
-]
-
 export default function AddBook() {
+  const categories = [
+    "Fiction",
+    "Classic",
+    "Science Fiction",
+    "Fantasy",
+    "Romance",
+  ]
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
