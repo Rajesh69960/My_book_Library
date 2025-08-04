@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
+import BookList from "./BookList"
+import Book from "./Book"
 export default function Home() {
   const categories = [
     "Dystopian",
@@ -9,6 +11,7 @@ export default function Home() {
     "Romance",
   ]
   const Books = useSelector((store) => store.cart.items)
+  console.log(Books)
 
   const popularBooks = Books.slice(0, 5)
   return (
@@ -19,7 +22,7 @@ export default function Home() {
         </h1>
 
         <section className="my-6 flex justify-between items-center text-gray-300">
-          <p className="text-xl font-semibold">Book By Categories</p>
+          <p className="text-xl font-semibold underline">Book By Categories</p>
           <ul className="flex flex-wrap gap-3">
             {categories.map((cat) => (
               <li key={cat}>
@@ -33,6 +36,13 @@ export default function Home() {
             ))}
           </ul>
         </section>
+        <div className="flex flex-wrap gap-6 justify-center my-10">
+          {Books.length > 0 ? (
+            Books.map((book) => <Book key={book.id} book={book} />)
+          ) : (
+            <p>No books found.</p>
+          )}
+        </div>
       </header>
       {/* Popular Books */}
       <section>
